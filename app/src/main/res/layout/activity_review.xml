@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REVIEWS"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/stashijau"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMART MANNEQUIN APP"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:textColor="@color/stashijau"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leave a Review"
+        android:layout_marginTop="140dp"
+        android:textAlignment="center"
+        android:textColor="@color/stashijau"
+        android:textStyle="italic"
+        android:textSize="20dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="180dp"
+        android:numStars="5" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Apakah aplikasi ini membantu anda?"
+            android:textColor="@color/stashijau"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya, tentu saja" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masih kurang membantu" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:text="Selain Smart Mannequin, Riset apa lagi yang anda ketahui di STAS-RG?"
+        android:paddingLeft="20dp"
+        android:textColor="@color/stashijau"
+        android:textStyle="bold"
+        android:textSize="17dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginTop="300dp"
+        android:entries="@array/spinner_items" />
+
+    //Lottie
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="30dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/thankyouuu"
+        tools:ignore="MissingConstraints" />
+    
+
+</RelativeLayout>

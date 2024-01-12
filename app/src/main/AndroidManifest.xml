@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BismillahPPBMass1"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BismillahPPBMass1"
+        tools:targetApi="31">
+        <activity
+            android:name=".halamanmonitoring"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivityPengujian1"
+            android:exported="false" />
+        <activity
+            android:name=".Listview"
+            android:exported="false" />
+        <activity
+            android:name=".hasilpengujian"
+            android:exported="false" />
+        <activity
+            android:name=".TestModel"
+            android:exported="false" />
+        <activity
+            android:name=".sensor"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_second"
+            android:exported="false" />
+        <activity
+            android:name=".mitra"
+            android:exported="false" />
+        <activity
+            android:name=".esp32cam"
+            android:exported="false" />
+        <activity
+            android:name=".mikrokontroler"
+            android:exported="false" />
+        <activity
+            android:name=".Desk"
+            android:exported="false" />
+        <activity
+            android:name=".Review"
+            android:exported="false" />
+        <activity
+            android:name=".menu_utama"
+            android:exported="false" />
+        <activity
+            android:name=".Halaman_Dev"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="false"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

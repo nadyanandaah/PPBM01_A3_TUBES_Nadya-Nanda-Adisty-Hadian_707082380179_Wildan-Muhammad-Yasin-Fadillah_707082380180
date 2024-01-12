@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stashijau4"
+    tools:context=".firstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RASPBERRY PI 4B"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/raspi"
+        android:contentDescription="Deskripsi gambar" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Raspberry Pi 4 Model B memiliki komponen yang hampir serupa dengan komputer pada umumnya, seperti CPU, GPU, RAM, Port USB, Audio Jack, HDMI, Ethernet, dan GPIO1. Untuk tempat penyimpanan data dan sistem operasi, Raspberry Pi tidak menggunakan harddisk drive (HDD) melainkan menggunakan Micro SD dengan kapasitas paling tidak 4 GB1. Sumber tenaga berasal dari micro USB power dengan sumber daya yang direkomendasikan yaitu sebesar 5V dan minimal arus 700 mA."
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/stashijau"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
